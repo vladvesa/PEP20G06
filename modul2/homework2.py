@@ -15,3 +15,4 @@ print('Second time in the format hh:mm:ss is:', secondTime)
 fmt = '%H:%M:%S'
 diff = datetime.strptime(secondTime, fmt) - datetime.strptime(firstTime, fmt)
 print(diff)
+

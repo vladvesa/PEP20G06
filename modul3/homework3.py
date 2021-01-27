@@ -79,3 +79,4 @@ def process_text(text: str):
 
 
 print(process_text('1234567a Text to te5t'))
+print()
