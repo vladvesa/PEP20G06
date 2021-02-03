@@ -5,7 +5,7 @@ def crypt_decrypt(my_string, key):
     return ''.join(result)
 
 
-def is_prime(number):
+def prime(number):
     for i in range(2, number // 2 + 2):
         if not number % i:
             return False
@@ -15,6 +15,6 @@ def is_prime(number):
 def generate_primes(limit):
     result = []
     for i in range(limit):
-        if is_prime(i):
+        if prime(i):
             result.append(i)
     return result
