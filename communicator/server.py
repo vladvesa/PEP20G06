@@ -29,7 +29,7 @@ class Server(MySecret):
         self.process = Thread(target=self.receive_message,
                               args=(self.messages,))
         self.process.start()
-        #self.__client_key_exchange()
+        # self.__client_key_exchange()
 
     def stop(self):
         """Stop communication server

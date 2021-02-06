@@ -93,10 +93,7 @@ right_drive = cars_built.right_side_drive()
 left_drive = cars_built.left_side_drive()
 print("Right side drive:", right_drive)
 print("Left side drive:", left_drive)
-# car_iter = iter(cars_built)
-# print(next(car_iter))
-# print(next(car_iter))
 
 with open("car_lot.txt", "x") as file:
-    for i in cars_built:
-        file.write(str(i) + "\n")
+    for lot_nr in cars_built:
+        file.write(str(lot_nr) + "\n")
